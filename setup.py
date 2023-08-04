@@ -113,7 +113,7 @@ def _make_mutual_information_requirements():
 
 def _make_visualization_requirements():
   return [
-      'ipython>=7,<8',
+      'ipython>=8',
   ]
 
 
@@ -146,13 +146,13 @@ with open('README.md') as fp:
   _LONG_DESCRIPTION = fp.read()
 
 setup(
-    name='tensorflow-data-validation',
+    name='tdspora-tensorflow-data-validation',
     version=__version__,
-    author='Google LLC',
-    author_email='tensorflow-extended-dev@googlegroups.com',
+    author='TDspora',
+    author_email='SupportEPMC-TDM@epam.com',
     license='Apache 2.0',
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Intended Audience :: Education',
         'Intended Audience :: Science/Research',
@@ -193,8 +193,7 @@ setup(
             nightly='>=1.14.0.dev',
             git_master='@git+https://github.com/tensorflow/metadata@master'),
         'tfx-bsl' + select_constraint(
-            default='>=1.13.0,<1.14',
-            nightly='>=1.14.0.dev',
+            default='>=1.14.0.dev0',
             git_master='@git+https://github.com/tensorflow/tfx-bsl@master'),
     ],
     extras_require={
