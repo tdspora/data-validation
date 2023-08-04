@@ -193,7 +193,7 @@ setup(
             nightly='>=1.14.0.dev',
             git_master='@git+https://github.com/tensorflow/metadata@master'),
         'tfx-bsl' + select_constraint(
-            default='>=1.14.0.dev0',
+            default='>=1.14.0dev0',
             git_master='@git+https://github.com/tensorflow/tfx-bsl@master'),
     ],
     extras_require={
