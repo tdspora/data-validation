@@ -146,7 +146,7 @@ with open('README.md') as fp:
   _LONG_DESCRIPTION = fp.read()
 
 setup(
-    name='tdspora-tensorflow-data-validation',
+    name='tensorflow-data-validation',
     version=__version__,
     author='TDspora',
     author_email='SupportEPMC-TDM@epam.com',
