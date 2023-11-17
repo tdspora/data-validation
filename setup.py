@@ -195,9 +195,8 @@ setup(
             nightly='>=1.15.0.dev',
             git_master='@git+https://github.com/tensorflow/metadata@master'),
         'tfx-bsl' + select_constraint(
-            default='>=1.14.0,<1.15',
-            nightly='>=1.15.0.dev',
-            git_master='@git+https://github.com/tensorflow/tfx-bsl@master'),
+            default='>=1.15.0.dev',
+            git_master='@git+https://github.com/tdspora/tfx-bsl@syngen-component'),
     ],
     extras_require={
         'mutual-information': _make_mutual_information_requirements(),
