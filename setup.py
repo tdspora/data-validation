@@ -113,7 +113,7 @@ def _make_mutual_information_requirements():
 
 def _make_visualization_requirements():
   return [
-      'ipython>=7,<8',
+      'ipython>=8',
   ]
 
 
@@ -185,7 +185,8 @@ setup(
         'numpy>=1.22.0',
         'pandas>=1.0,<2',
         'protobuf>=3.20.3,<5',
-        'pyarrow>=10,<11',
+#        'pyarrow>=10,<11',
+        'pyarrow<15,>=4.0.0',
         'pyfarmhash>=0.2.2,<0.4',
         'six>=1.12,<2',
         'tensorflow>=2.13,<3',
